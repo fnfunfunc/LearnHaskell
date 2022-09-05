@@ -1,4 +1,4 @@
 module Main where
 
-
-main = print "Hello Haskell"
+main :: IO ()
+main = print "Hello Haskell"    
