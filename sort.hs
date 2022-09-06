@@ -11,7 +11,7 @@ bubbleSort [] = []
 bubbleSort xs = bubbleSort initialElements ++ [lastElement]
     where swappedxs = swaps xs
           initialElements = init swappedxs
-          lastElement =last swappedxs
+          lastElement = last swappedxs
 
 delete :: Eq t => t -> [t] -> [t]
 delete _ [] = []
@@ -54,4 +54,3 @@ main = do
     print $ selectionSort [23,121,231,11,2,34,656,234,211]
     print $ quickSort [23,121,231,11,2,34,656,234,211]
     print $ mergeSort [23,121,231,11,2,34,656,234,211]
-    
